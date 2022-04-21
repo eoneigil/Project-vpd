@@ -1,0 +1,417 @@
+.container{
+    position: relative;
+    max-width: 93%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: 90px;
+}
+
+.red {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background: #F82323;
+}
+
+.hed_logo {
+    position: relative;
+    top: -10px;
+}
+
+.hed_text {
+    position: relative;
+    top: 5px;
+    font-family: "Roboto Black";
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 105px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .3);
+    z-index: 4;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: normal;
+    -webkit-box-pack: justify;
+    padding: 13px 0;
+    margin-top: -3px;
+    list-style-type: none;
+}
+
+.menu .menu_link {
+    color: #000;
+    font-family: "Roboto Medium" ;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu .menu_label {
+    color: #000;
+    font-family: "Roboto Medium" ;
+    font-weight: 100;
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.menu button:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #F82323; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.menu button:hover:after{
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.menu .menu_item_1 {
+    position: absolute;
+}
+
+.menu .menu_item_3 {
+    position: absolute;
+    right: 235px;
+}
+
+.menu .menu_item_4 {
+    position: absolute;
+    right: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.container-3{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-3 input#search{
+    width: 300px;
+    height: 39px;
+    font-size: 10pt;
+    margin-top: -4px;
+    float: left;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.search_magnifier {
+    display: block;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+    min-height: 32px;
+}
+
+.menu .menu_item {
+    justify-content: center;
+}
+
+.box {
+    display: block;
+    margin: 0 auto;
+}
+
+.blogi {
+    background-color: #C4C4C4;
+}
+
+.blogi .fon {
+    display: block;
+    position: relative;
+    background-color: #E5E5E5;
+    margin-top: 15px;
+    z-index: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogi .col-md-8 {
+    z-index: 4;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.blogi .blogi_block {
+    position: relative;
+    height: 610px;
+    z-index: -1;
+}
+
+.blogi .blogi_block .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.blogi .blogi_block .subtitle {
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+    z-index: 2;
+}
+
+.blogi .blogi_block .screen {
+    display: block;
+    background-color: black;
+    margin: 60px auto auto auto;
+    width: 70%;
+    height: 345px;
+}
+
+.blogi .blogi_image {
+    margin: 36px auto 34px 15%;
+}
+
+.blogi .blogi_image .comment {
+    margin-left: 50px;
+}
+
+.futer{
+    max-height: 126px;
+    background-color: #1a1a1a;
+    padding: 61px 0 69px 0;
+}
+
+.info {
+    margin: 0 auto;
+    width: 377px;
+    text-align: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.futer a {
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.pop_up {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.8);
+    z-index: 100;
+    display: none;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body_register {
+    margin: 40px auto auto auto;
+    width: 510px;
+    height: 394px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.pop_up_body_register input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 449px;
+    padding: 17px 20px;
+    background-color: #E5E5E5;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.pop_up_body_register input:focus{
+    outline: none;
+}
+
+.pop_up_body_register button1 {
+    cursor: pointer;
+    display: inline-block;
+    margin: 18px 152px -11px 8px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    opacity: .4;
+}
+
+.pop_up_body_register button1:hover {
+    opacity: 1;
+}
+
+.pop_up_body_register button2 {
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+
+.pop_up_body_register button3 {
+    cursor: pointer;
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 22px auto 35px auto;
+    padding: 11px 0px;
+    background-color: #1F1F1F;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pop_up_body_register button3:hover{
+    color: #F82323;
+}
+
+.pop_up_close{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    color: black;
+    opacity: .4;
+}
+
+.pop_up_close:hover{
+    opacity: 1;
+}
+
+.pop_up_body_vxod {
+    margin: 40px auto auto auto;
+    width: 510px;
+    height: 315px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.pop_up_body_vxod input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 449px;
+    padding: 17px 20px;
+    background-color: #E5E5E5;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.pop_up_body_vxod input:focus{
+    outline: none;
+}
+
+.pop_up_body_vxod button2 {
+    cursor: pointer;
+    display: inline-block;
+    margin: 18px -7px -28px 151px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    opacity: .4;
+}
+
+.pop_up_body_vxod button2:hover {
+    opacity: 1;
+}
+
+.pop_up_body_vxod button1 {
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+
+.pop_up_body_vxod button3 {
+    cursor: pointer;
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 22px auto 35px auto;
+    padding: 11px 0px;
+    background-color: #1F1F1F;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pop_up_body_vxod button3:hover{
+    color: #F82323;
+}
