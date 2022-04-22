@@ -269,7 +269,109 @@ button_plus{
 
 .fon_profile .txt_pole hr{
     margin-top: 2px;
-    border-style: dashed;
+}
+
+.profile .photo .button_red{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0DB6EC;
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 21%);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+.pop_up_body_red {
+    display: flex;
+    margin: 40px auto auto auto;
+    width: 665px;
+    height: 350px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.pop_up_body_red .photo_red {
+    display: flow-root;
+    vertical-align: top;
+    text-align: center;
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.pop_up_body_red .round {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.pop_up_body_red .add_photo {
+    position: absolute;
+    display: flex;
+    margin: -76px auto auto 47px;
+}
+
+.pop_up_body_red .button_save{
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0DB6EC;
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 21%);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.pop_up_body_red .polya {
+    display: inline-block;
+    background: none;
+    width: 320px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+.pop_up_body_red .txt_nazv{
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    color: #4D4D4D;
+    padding: 16px 0 16px 0;
+}
+
+.pop_up_body_red .input_red{
+    width: 320px;
+    padding: 4px 13px;
+    background: none;
+    border: 1px solid #878787;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.pop_up_body_red input:focus{
+    outline: none;
 }
 
 .blogi {
@@ -389,7 +491,6 @@ button_plus{
     top: 0;
     background-color: rgba(0,0,0, 0.8);
     z-index: 100;
-    display: none;
 }
 
 .pop_up_container {
@@ -401,7 +502,7 @@ button_plus{
 .pop_up_body_register {
     margin: 40px auto auto auto;
     width: 510px;
-    height: 394px;
+    height: 474px;
     background: #FFFFFF;
     border-radius: 10px;
     text-align: center;
