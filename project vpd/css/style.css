@@ -237,6 +237,13 @@ button_plus{
     margin-left: -10px;
 }
 
+.dropdown .round {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    text-align: center;
+}
+
 .fon_profile .round {
     width: 160px;
     height: 160px;
@@ -491,6 +498,7 @@ button_plus{
     top: 0;
     background-color: rgba(0,0,0, 0.8);
     z-index: 100;
+    display: none;
 }
 
 .pop_up_container {
