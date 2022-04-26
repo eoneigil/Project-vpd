@@ -113,10 +113,6 @@ button {
     right: 0;
 }
 
-.futer a:hover {
-    text-decoration: none;
-}
-
 .container-3{
     width: 300px;
     vertical-align: middle;
@@ -231,13 +227,13 @@ button_plus{
 .fon_profile .photo_descr {
     font-family: "Roboto Medium";
     font-weight: 300;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     margin-top: 25px;
     margin-left: -10px;
 }
 
-.dropdown .round {
+.photo_polz {
     width: 34px;
     height: 34px;
     border-radius: 100px;
@@ -254,15 +250,15 @@ button_plus{
 .fon_profile .polya {
     display: inline-block;
     background: none;
-    width: 370px;
-    height: 105px;
-    margin-top: 55px;
+    width: 22%;
+    height: 350px;
+    margin-top: 35px;
 }
 
 .fon_profile .txt_nazv{
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 15px;
+    font-size: 20px;
     color: #4D4D4D;
     padding: 0 0 16px 0;
 }
@@ -270,7 +266,7 @@ button_plus{
 .fon_profile .txt_pole{
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     color: #000000;
 }
 
@@ -280,7 +276,7 @@ button_plus{
 
 .profile .photo .button_red{
     margin-top: 19px;
-    width: 172px;
+    width: 155px;
     height: 46px;
     border: none;
     border-radius: 3px;
@@ -385,6 +381,15 @@ button_plus{
     background-color: #C4C4C4;
 }
 
+.blogi .head{
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+}
+
 .blogi_prof {
     background-color: #E5E5E5;
 }
@@ -424,6 +429,49 @@ button_plus{
     z-index: -1;
 }
 
+.blogi_block .polz {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    margin: 40px 13px 17px 80%;
+}
+
+.blogi_block .polz_text{
+    font-family: "Roboto Medium";
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+.blogi_block .photo_href{
+    width: 34px;
+    height: 34px;
+}
+
+.blogi_block .text_href{
+    width: 75px;
+    height: 24px;
+}
+
+.blogi_block .polz_name{
+    font-family: "Roboto Medium";
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.blogi_block a{
+    text-decoration: none;
+}
+
+.blogi_block .polz_name:hover{
+    color: #F82323;
+}
+
 .blogi .blogi_block .title {
     font-family: 'Roboto';
     font-style: normal;
@@ -454,7 +502,7 @@ button_plus{
 }
 
 .blogi .blogi_image {
-    margin: 36px auto 34px 15%;
+    margin: -75px auto 34px 3%;
 }
 
 .blogi .blogi_image .comment {
@@ -467,27 +515,27 @@ button_plus{
     padding: 61px 0 69px 0;
 }
 
-.info {
+.futer .info {
+    display: flex;
     margin: 0 auto;
-    width: 377px;
+    width: 500px;
     text-align: center;
-    color: #888888;
+    color: #FFFFFF;
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
 }
 
-.futer a {
-    color: #888888;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 21px;
-}
-
-.underlined {
-    text-decoration: underline;
+.futer .logotip{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    margin: -17px auto -49px 30px;
 }
 
 .pop_up {
