@@ -16,10 +16,10 @@
     <nav>
         <div class="red"></div>
         <div class="container">
-            <a href="#" class="hed_logo"><img src="../img/cube%201.png" alt="logo"></a>
-            <a href="#" class="hed_text">#3dblog</a>
+            <a href="registered.html" class="hed_logo"><img src="../img/cube%201.png" alt="logo"></a>
+            <a href="registered.html" class="hed_text">#3dblog</a>
             <ul class="menu">
-                <li class="menu_item_1"><a href="#" class="menu_link">Главная</a></li>
+                <li class="menu_item_1"><a href="registered.html" class="menu_link">Главная</a></li>
                 <div class="box">
                     <div class="container-3">
                         <span class="icon"><i class="fa fa-search"></i></span>
@@ -29,12 +29,12 @@
                 <a><button_plus>+</button_plus></a>
                 <div class="dropdown">
                     <a href="" class="dropbtn">
-                        <img src="../icons/Ellipse%201.png" alt="profile">
+                        <img src="../img/photo.jpg" alt="profile" class="photo_polz">
                         <img src="../icons/Arrow%201.png" alt="arrow">
                     </a>
                     <div class="dropdown-content">
-                        <a href="#">Профиль</a>
-                        <a href="#">Выход</a>
+                        <a href="profile.html">Профиль</a>
+                        <a href="index.html">Выход</a>
                     </div>
                 </div>
             </ul>
@@ -47,14 +47,24 @@
         <div class="fon_profile">
             <div class="photo">
                 <img src="../img/photo.jpg" alt="" class="round">
-                <div data-modal-name class="photo_descr">Иван Гиль</div>
+                <div class="photo_descr">Иван Гиль</div>
                 <button class="button_red">Редактировать</button>
             </div>
             <div class="polya col-md-4 offset-md-1">
-                <div class="txt_nazv">e-mail:</div>
-                <div data-modal-email class="txt_pole">Babuskaaa@gmail.com<hr size=3px width=300px align="left"></div>
-                <div class="txt_nazv">номер:</div>
-                <div data-modal-number class="txt_pole">+7-923-757-77-58 <hr size=3px width=300px align="left"></div>
+                <div class="txt_nazv">Пользователей отслеживают:</div>
+                <div class="txt_pole">94<hr size=3px width=300px align="left"></div>
+                <div class="txt_nazv">Возраст:</div>
+                <div class="txt_pole">19<hr size=3px width=300px align="left"></div>
+                <div class="txt_nazv">Количество блогов:</div>
+                <div class="txt_pole">4<hr size=3px width=300px align="left"></div>
+            </div>
+            <div class="polya col-md-4 offset-md-1">
+                <div class="txt_nazv">Пол:</div>
+                <div class="txt_pole">Мужской<hr size=3px width=300px align="left"></div>
+                <div class="txt_nazv">E-mail:</div>
+                <div class="txt_pole">Babuskaaa@gmail.com<hr size=3px width=300px align="left"></div>
+                <div class="txt_nazv">Номер:</div>
+                <div class="txt_pole">+7-923-757-77-58 <hr size=3px width=300px align="left"></div>
             </div>
         </div>
     </div>
@@ -67,12 +77,20 @@
                     <button class="button_save">Сохранить</button>
                 </div>
                 <div class="polya col-md-4 offset-md-1">
+                    <div class="txt_nazv">Возраст:</div>
+                    <input class="input_red" type="number" placeholder="Возраст">
+                    <div class="txt_nazv">Пол:</div>
+                    <input class="input_red" type="text" placeholder="Пол">
+                    <div class="txt_nazv">Номер телефона:</div>
+                    <input class="input_red" type="number" placeholder="Номер телефона">
+                </div>
+                <div class="polya col-md-4 offset-md-1">
                     <div class="txt_nazv">Имя пользователя</div>
-                    <input data-modal-name class="input_red" type="text" placeholder="Имя пользователя">
-                    <div class="txt_nazv">e-mail:</div>
-                    <input data-modal-email class="input_red" type="email" placeholder="Электронная почта">
-                    <div class="txt_nazv">номер:</div>
-                    <input data-modal-number class="input_red" type="number" placeholder="Номер телефона">
+                    <input class="input_red" type="text" placeholder="Имя пользователя">
+                    <div class="txt_nazv">E-mail:</div>
+                    <input class="input_red" type="email" placeholder="Электронная почта">
+                    <div class="txt_nazv">Пароль:</div>
+                    <input class="input_red" type="password" placeholder="Пароль">
                 </div>
                 <div class="pop_up_close">x</div>
             </div>
@@ -82,6 +100,7 @@
 <section class="blogi blogi_prof">
     <div class="container">
         <div class="fon">
+            <div class="head">Блоги пользователя:</div>
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="blogi_block">
@@ -89,6 +108,11 @@
                         <div class="subtitle">бла бла бла какой-то текст который будет расширять длину нашего поста
                             в зависимости от количества текста здесь</div>
                         <div class="screen"></div>
+                        <div class="polz">
+                            <div class="polz_text">от:</div>
+                            <a href="#" class="photo_href"><img src="../img/photo.jpg" alt="profile" class="photo_polz"></a>
+                            <a href="#" class="text_href"><div class="polz_name">Иван Гиль</div></a>
+                        </div>
                         <div class="blogi_image">
                             <a href="index.html"><img src="../icons/love%201.png" alt="like" class="like"></a>
                             <a href="index.html" class="comment"><img src="../icons/message%201.png" alt="comment"></a>
@@ -101,9 +125,14 @@
                         <div class="subtitle">бла бла бла какой-то текст который будет расширять длину нашего поста
                             в зависимости от количества текста здесь</div>
                         <div class="screen"></div>
+                        <div class="polz">
+                            <div class="polz_text">от:</div>
+                            <a href="#" class="photo_href"><img src="../img/photo.jpg" alt="profile" class="photo_polz"></a>
+                            <a href="#" class="text_href"><div class="polz_name">Иван Гиль</div></a>
+                        </div>
                         <div class="blogi_image">
                             <a href="index.html"><img src="../icons/love%201.png" alt="like" class="like"></a>
-                            <a href="index.html"><img src="../icons/message%201.png" alt="comment" class="comment"></a>
+                            <a href="index.html" class="comment"><img src="../icons/message%201.png" alt="comment"></a>
                         </div>
                     </div>
                 </div>
@@ -112,15 +141,10 @@
     </div>
 </section>
 <section class="futer">
+    <div class="logotip">#3dblog</div>
     <div class="info">
-        <div class="info_text">
-            <a href="#" class="underlined">Служба поддержки</a>
-            |
-            <a href="#" class="underlined">Политика конфиденциальности</a>
-        </div>
-        Позвоните нам <a href="tel:+88005550121">8-800-555-01-21</a>
+        Полное или частичное копирование сайта запрещено ©#3DBLOG <br>Почта для связи: Babushkaaa@gmail.com
     </div>
 </section>
-<script src="profile.js"></script>
 </body>
 </html>
