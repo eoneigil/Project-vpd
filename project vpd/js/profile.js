@@ -3,14 +3,14 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     const redact = document.querySelector('.button_red'),
-          popUp = document.querySelector('.pop_up'),
-          profile = document.querySelector('.profile'),
-          save = popUp.querySelector('.button_save'),
-          nameProfile = profile.querySelector('[data-modal-name]'),
-          emailProfile = profile.querySelector('[data-modal-email]'),
-          numberProfile = profile.querySelector('[data-modal-number]'),
-          closePopUp = document.querySelector('.pop_up_close');
-    
+        popUp = document.querySelector('.pop_up'),
+        profile = document.querySelector('.profile'),
+        save = popUp.querySelector('.button_save'),
+        nameProfile = profile.querySelector('[data-modal-name]'),
+        emailProfile = profile.querySelector('[data-modal-email]'),
+        numberProfile = profile.querySelector('[data-modal-number]'),
+        closePopUp = document.querySelector('.pop_up_close');
+
     // Открытие окна для редактирования
     redact.addEventListener('click', () => {
         popUp.style.display = 'block';
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let nameProfileRedact = popUp.querySelector('[data-modal-name]').value,
             emailProfileRedact = popUp.querySelector('[data-modal-email]').value,
             numberProfileRedact = popUp.querySelector('[data-modal-number]').value;
-        
+
         let testName = false,
             testEmail =false,
             testNumber =false;
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
             testNumber =false;
         }
     }
-    
+
     save.addEventListener('click', () => {
         redactClick ();
     });
