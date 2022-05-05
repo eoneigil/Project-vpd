@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../icons/cube%201%20(1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>3DBLOG</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="red"></div>
+        <div class="container">
+            <a href="registered.html" class="hed_logo"><img src="../img/cube%201.png" alt="logo"></a>
+            <a href="registered.html" class="hed_text">#3dblog</a>
+            <ul class="menu">
+                <li class="menu_item_1"><a href="registered.html" class="menu_link">Главная</a></li>
+                <div class="box">
+                    <div class="container-3">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Поиск..." />
+                    </div>
+                </div>
+                <a><button_plus>+</button_plus></a>
+                <div class="dropdown">
+                    <a href="" class="dropbtn">
+                        <img src="../img/photo.jpg" alt="profile" class="photo_polz">
+                        <img src="../icons/Arrow%201.png" alt="arrow">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="profile.html">Профиль</a>
+                        <a href="index.html">Выход</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<script>
+    /**
+     * EasyToggler 1.2.0
+     * Simple class switcher on web elements. JavaScript only.
+     * GitHub: https://github.com/rah-emil/easy-toggler
+     *
+     * Copyright 2020 Rah Emil
+     *
+     * Released under the MIT License
+     *
+     * Released: July 21, 2020
+     * Latest updates: July 21, 2021
+     */
+
+    !function(){"use strict";document.addEventListener("click",function(t){const e=t.target.closest("[data-easy-toggle]");if(e){t.preventDefault();let a=e.getAttribute("data-easy-toggle"),s=e.getAttribute("data-easy-class");try{document.querySelectorAll("[data-easy-toggle]").forEach(t=>{t.hasAttribute("data-easy-parallel")||t===e||document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class"))}),document.querySelector(a).classList.toggle(s)}catch(t){console.warn("EasyToggler.js : Блок "+a+" не существует")}}if(!e){let e=document.querySelectorAll("[data-easy-rcoe]");Array.from(e).forEach.call(e,function(e){let a=e.getAttribute("data-easy-toggle"),s=e.getAttribute("data-easy-class");if(!t.target.closest(a))try{document.querySelector(a).classList.remove(s)}catch(t){console.warn("EasyToggler.js : Блок "+a+" не существует")}})}})}();
+</script>
+<section class="blogi">
+    <div class="container">
+        <div class="fon">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="blogi_block">
+                        <div class="title">Заголовок поста</div>
+                        <div class="subtitle">бла бла бла какой-то текст который будет расширять длину нашего поста
+                            в зависимости от количества текста здесь</div>
+                        <div class="screen"></div>
+                        <div class="polz">
+                            <div class="polz_text">от:</div>
+                            <a href="#" class="photo_href"><img src="../img/photo.jpg" alt="profile" class="photo_polz"></a>
+                            <a href="#" class="text_href"><div class="polz_name">Иван Гиль</div></a>
+                        </div>
+                        <div class="blogi_image">
+                            <a href="index.html"><img src="../icons/love%201.png" alt="like" class="like"></a>
+                            <a href="index.html" class="comment"><img src="../icons/message%201.png" alt="comment"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="blogi_block">
+                        <div class="title">Заголовок поста</div>
+                        <div class="subtitle">бла бла бла какой-то текст который будет расширять длину нашего поста
+                            в зависимости от количества текста здесь</div>
+                        <div class="screen"></div>
+                        <div class="polz">
+                            <div class="polz_text">от:</div>
+                            <a href="#" class="photo_href"><img src="../img/photo.jpg" alt="profile" class="photo_polz"></a>
+                            <a href="#" class="text_href"><div class="polz_name">Иван Гиль</div></a>
+                        </div>
+                        <div class="blogi_image">
+                            <a href="index.html"><img src="../icons/love%201.png" alt="like" class="like"></a>
+                            <a href="index.html" class="comment"><img src="../icons/message%201.png" alt="comment"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="futer">
+    <div class="logotip">#3dblog</div>
+    <div class="info">
+        Полное или частичное копирование сайта запрещено ©#3DBLOG <br>Почта для связи: Babushkaaa@gmail.com
+    </div>
+</section>
+</body>
+</html>
