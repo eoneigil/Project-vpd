@@ -3,24 +3,27 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     const redact = document.querySelector('.button_red'),
-        popUp = document.querySelector('.pop_up'),
+        popUpRedact = document.querySelector('[data-redact]'),
         profile = document.querySelector('.profile'),
-        save = popUp.querySelector('.button_save'),
+        save = popUpRedact.querySelector('.button_save'),
         nameProfile = profile.querySelector('[data-modal-name]'),
         emailProfile = profile.querySelector('[data-modal-email]'),
         numberProfile = profile.querySelector('[data-modal-number]'),
-        closePopUp = document.querySelector('.pop_up_close');
+        closePopUp = popUpRedact.querySelector('.pop_up_close');
 
-    // Открытие окна для редактирования
-    redact.addEventListener('click', () => {
-        popUp.style.display = 'block';
+    // Открытие модального окна
+    function openModal (selector) {
+        selector.style.display = 'block';
         document.body.style.overflow = 'hidden';
+    }
+    redact.addEventListener('click', () => {
+        openModal(popUpRedact);
     });
 
     function redactClick () {
-        let nameProfileRedact = popUp.querySelector('[data-modal-name]').value,
-            emailProfileRedact = popUp.querySelector('[data-modal-email]').value,
-            numberProfileRedact = popUp.querySelector('[data-modal-number]').value;
+        let nameProfileRedact = popUpRedact.querySelector('[data-modal-name]').value,
+            emailProfileRedact = popUpRedact.querySelector('[data-modal-email]').value,
+            numberProfileRedact = popUpRedact.querySelector('[data-modal-number]').value;
 
         let testName = false,
             testEmail =false,
@@ -61,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
             testNumber=true;
         }
         if (testName, testEmail, testNumber == true) {
-            close();
+            close(popUpRedact);
             testName = false;
             testEmail =false;
             testNumber =false;
@@ -72,10 +75,27 @@ window.addEventListener('DOMContentLoaded', () => {
         redactClick ();
     });
 
-    // Закрытие окна для редактирования
-    function close () {
-        popUp.style.display = 'none';
+    // Закрытие модального окна
+    function close (selector) {
+        selector.style.display = 'none';
         document.body.style.overflow = '';
     }
-    closePopUp.addEventListener('click', close);
+    closePopUp.addEventListener('click', ()=>{
+        close(popUpRedact);
+    });
+
+    //Создание нового поста
+    const popUpNewPost = document.querySelector('[data-new-post-popUp]'),
+          newPopUpClose = popUpNewPost.querySelector('.pop_up_close'),
+          btnNewPost = document.querySelectorAll('[data-new-post]');
+    
+    btnNewPost.forEach(btn=>{
+        btn.addEventListener('click', ()=> {
+            openModal(popUpNewPost);
+        });
+    });
+
+    newPopUpClose.addEventListener('click', ()=> {
+        close(popUpNewPost);
+    });
 });

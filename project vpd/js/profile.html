@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>ПРОФИЛЬ</title>
+    <title>3DBLOG</title>
 </head>
 <body>
 <header>
     <nav>
         <div class="red"></div>
         <div class="container">
-            <a href="registered.html" class="hed_logo"><img class="img_logo" src="../img/cube%201.png" alt="logo"></a>
+            <a href="registered.html" class="hed_logo"><img src="../img/cube%201.png" alt="logo"></a>
             <a href="registered.html" class="hed_text">#3dblog</a>
             <ul class="menu">
                 <li class="menu_item_1"><a href="registered.html" class="menu_link">Главная</a></li>
@@ -26,7 +26,7 @@
                         <input type="search" id="search" placeholder="Поиск..." />
                     </div>
                 </div>
-                <a><button_plus>+</button_plus></a>
+                <a><button_plus data-new-post>+</button_plus></a>
                 <div class="dropdown">
                     <a href="" class="dropbtn">
                         <img src="../img/photo.jpg" alt="profile" class="photo_polz">
@@ -66,10 +66,10 @@
                 <div class="txt_nazv">Номер:</div>
                 <div class="txt_pole">+7-923-757-77-58 <hr size=3px width=100% align="left"></div>
             </div>
-            <button class="button_add">Создать пост</button>
+            <button data-new-post class="button_add">Создать пост</button>
         </div>
     </div>
-    <div class="pop_up">
+    <div data-redact class="pop_up">
         <div class="pop_up_container">
             <div class="pop_up_body_red">
                 <div class="photo_red">
@@ -97,8 +97,8 @@
             </div>
         </div>
     </div>
-    <div class="pop_up">
-        <div class="pop_up_container">
+    <div data-new-post-popUP class="pop_up">
+        <div  class="pop_up_container">
             <div class="pop_up_body_add">
                 <div class="pop_up_close">x</div>
                 <div class="headtext">создание поста</div>

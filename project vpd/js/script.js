@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const modalOpen = document.querySelectorAll('[data-modal-open]'),
           modalOpenRegister = document.querySelectorAll('[data-modal-register]'),
           modal = document.querySelectorAll('.pop_up'),
-          modalClose = document.querySelectorAll('.pop_up_close');
+          modalClose = document.querySelectorAll('.pop_up_close'),
+          track = document.querySelector('.button_red');
 
     
     // Открытие модального окна 
@@ -35,5 +36,10 @@ window.addEventListener('DOMContentLoaded', () => {
             modal[1].style.display = 'none';
             document.body.style.overflow = '';
         });
+    });
+
+    // Отслеживание
+    track.addEventListener('click', ()=>{
+        track.classList.toggle("show");
     });
 });

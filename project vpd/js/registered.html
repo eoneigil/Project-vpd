@@ -26,7 +26,7 @@
                         <input type="search" id="search" placeholder="Поиск..." />
                     </div>
                 </div>
-                <a><button_plus>+</button_plus></a>
+                <a><button_plus class="plus">+</button_plus></a>
                 <div class="dropdown">
                     <a href="" class="dropbtn">
                         <img src="../img/photo.jpg" alt="profile" class="photo_polz">
@@ -99,6 +99,29 @@
             </div>
         </div>
     </div>
+    <div class="pop_up">
+        <div  class="pop_up_container">
+            <div class="pop_up_body_add">
+                <div class="pop_up_close">x</div>
+                <div class="headtext">создание поста</div>
+                <div class="polya col-md-3">
+                    <div class="txt_nazv">Название (обязательное поле)</div>
+                    <input class="input_add" type="text" placeholder="Название">
+                    <div class="txt_nazv">Теги (обязательное поле)</div>
+                    <input class="input_add" type="text" placeholder="Теги">
+                </div>
+                <div class="jpg col-md-3 offset-md-1">
+                    <div class="photo"></div>
+                </div>
+                <button class="button_upload">Загрузить</button>
+                <div class="descr col-md-7">
+                    <div class="txt_nazv">Описание</div>
+                    <input class="input_descr" type="text" placeholder="Описание">
+                </div>
+                <button class="button_drop">Опубликовать</button>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="futer">
     <div class="logotip">#3dblog</div>
@@ -106,5 +129,6 @@
         Полное или частичное копирование сайта запрещено ©#3DBLOG <br>Почта для связи: Babushkaaa@gmail.com
     </div>
 </section>
+<script src = "registered.js"></script>
 </body>
 </html>
